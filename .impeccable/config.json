@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "/Users/josecrea/okservice-emergencia/index.html"
+        ],
+        "createdAt": "2026-10-14T17:58:53.712Z",
+        "reason": "No es un side-tab: es border-top 3px amarillo en el PIE, calcado del sistema de okservice.es (.legal en site.css:629, mismo color y mismo grosor). Coherencia de marca deliberada para que la pagina de emergencia se reconozca como suya; no es un borde lateral de tarjeta."
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "/Users/josecrea/okservice-emergencia/index.html"
+        ],
+        "createdAt": "2026-10-14T17:58:53.988Z",
+        "reason": "Medido con Playwright a 360 y 1440 px: header y .aviso dejan 16 px de hueco real (lo da el .wrap hijo), .datos 23 px y el inset vertical bajo el filete del pie es 22,4 px, por encima de los 12-16 px que pide la propia regla. El 0 px que se ve es horizontal y no aplica a un border-top."
+      }
+    ]
+  }
+}

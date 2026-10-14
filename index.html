@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>#Okservice.es · Electricista en Tenerife Sur — Averías y urgencias</title>
+<meta name="description" content="Electricista autorizado en Tenerife Sur. Averías eléctricas, boletín CIE y reformas. Llama al 679 32 52 22 o escribe por WhatsApp.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://okservice.es/">
+
+<!-- Página de emergencia: se sirve FUERA del VPS y sin una sola dependencia externa.
+     Ni fuentes de Google, ni CSS aparte, ni JavaScript, ni imágenes remotas: si está
+     cayéndose la infraestructura, cada cosa que haya que ir a buscar a otro sitio es
+     otra cosa que puede fallar. Todo viaja en este único fichero.
+     NO LLEVA PRECIOS a propósito: una página que se toca una vez al año acaba mintiendo,
+     y un precio equivocado durante una caída es peor que no dar precio. -->
+
+<style>
+  :root{
+    --amarillo:#f1de27; --tinta:#0f1923; --verde:#2f7d20; --verde-hover:#276a1a;
+    --gris:#5b6672; --fondo:#fffef7; --borde:rgba(15,25,35,.12);
+    /* 🔴 Superficies que son OSCURAS SIEMPRE, en los dos temas. Al principio la banda de aviso
+       y la marca usaban --tinta de fondo; en modo oscuro --tinta se vuelve clara y el texto
+       blanco encima quedaba en 1,1:1 — invisible. Un color de TEXTO no puede hacer de color de
+       FONDO si el tema lo invierte: son dos papeles distintos y necesitan dos variables. */
+    --superficie-oscura:#0f1923; --sobre-oscura:#fff;
+    --sobre-amarillo:#0f1923;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  body{
+    margin:0; background:var(--fondo); color:var(--tinta);
+    font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  .wrap{width:min(100% - 2rem,760px);margin-inline:auto}
+  header{background:var(--amarillo);padding:1.1rem 0}
+  .marca{font-weight:800;font-size:1.3rem;letter-spacing:-.02em;margin:0;color:var(--sobre-amarillo)}
+  .marca span{color:var(--verde)}
+  .aviso{
+    background:var(--superficie-oscura);color:var(--sobre-oscura);padding:.85rem 0;font-size:.92rem;
+  }
+  .aviso p{margin:0}
+  h1{font-size:clamp(1.9rem,1.3rem+2.6vw,2.9rem);line-height:1.1;letter-spacing:-.03em;margin:2rem 0 .6rem}
+  .lead{font-size:1.12rem;color:var(--gris);margin:0 0 1.8rem;max-width:52ch}
+  .acciones{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:2.2rem}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+    padding:1rem 1.5rem;border-radius:8px;border:2px solid transparent;
+    font-weight:700;font-size:1.05rem;text-decoration:none;min-height:48px;
+  }
+  .btn-tel{background:var(--verde);color:#fff;flex:1 1 15rem}
+  .btn-tel:hover{background:var(--verde-hover)}
+  .btn-wa{border-color:var(--tinta);color:var(--tinta);flex:1 1 11rem}
+  .btn-wa:hover{background:var(--tinta);color:#fff}
+  .telefono{display:block;font-size:1.45rem;letter-spacing:.01em}
+  h2{font-size:1.25rem;margin:2.2rem 0 .8rem;letter-spacing:-.015em}
+  ul{margin:0 0 1.5rem;padding-left:1.25rem}
+  li{margin-bottom:.4rem}
+  .datos{
+    background:#fff;border:1px solid var(--borde);border-radius:10px;
+    padding:1.2rem 1.4rem;margin:2rem 0;font-size:.95rem;
+  }
+  .datos p{margin:.3rem 0}
+  .datos strong{font-weight:700}
+  footer{border-top:3px solid var(--amarillo);margin-top:2.5rem;padding:1.4rem 0 2.5rem;font-size:.85rem;color:var(--gris)}
+  a{color:var(--verde)}
+  @media (prefers-color-scheme:dark){
+    :root{--fondo:#11161c;--tinta:#f2f5f7;--gris:#aab4bf;--borde:rgba(255,255,255,.14)}
+    .datos{background:#1a2128}
+    .btn-wa{border-color:#f2f5f7;color:#f2f5f7}
+    .btn-wa:hover{background:#f2f5f7;color:#11161c}
+    /* El verde de marca (#2f7d20) sobre el fondo oscuro se queda en 3,53:1, por debajo del 4,5
+       que pide AA para texto normal: los enlaces del pie y del cuerpo no se leerían de noche.
+       Se aclara SOLO para texto en modo oscuro — 5,30:1 — y el botón conserva el verde de marca,
+       que ahí el contraste lo da el blanco sobre el verde (5,15:1) y no al revés. */
+    a{color:#3d9e2a}
+    .btn-tel{background:var(--verde);color:#fff}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap"><p class="marca">#Okservice<span>.es</span></p></div>
+</header>
+
+<div class="aviso">
+  <div class="wrap">
+    <p>Estamos teniendo una incidencia técnica en la web. <strong>El servicio funciona con normalidad:</strong> llámanos o escríbenos.</p>
+  </div>
+</div>
+
+<main class="wrap">
+  <h1>Electricista autorizado en Tenerife&nbsp;Sur</h1>
+  <p class="lead">Averías eléctricas, boletín CIE y reformas. Te decimos el precio antes de salir.</p>
+
+  <div class="acciones">
+    <a class="btn btn-tel" href="tel:+34679325222">
+      Llamar ahora <span class="telefono">679&nbsp;32&nbsp;52&nbsp;22</span>
+    </a>
+    <a class="btn btn-wa" href="https://wa.me/34679325222?text=Hola%2C%20necesito%20un%20electricista%20en%20Tenerife%20Sur.">
+      WhatsApp
+    </a>
+  </div>
+
+  <h2>Si se te ha ido la luz, antes de llamar</h2>
+  <ul>
+    <li><strong>Mira si los vecinos tienen luz.</strong> Si está toda la calle a oscuras, la avería es de la distribuidora: e-distribución, <a href="tel:900878212">900&nbsp;878&nbsp;212</a>.</li>
+    <li><strong>Abre la tapa del cuadro</strong> y mira qué palanca está abajo. Súbela una vez; si vuelve a caer, no insistas.</li>
+    <li><strong>Si hay olor a quemado, humo o algo caliente</strong>, no toques nada y llámanos. Si hay fuego, primero el 112.</li>
+  </ul>
+
+  <h2>Qué hacemos</h2>
+  <ul>
+    <li>Averías eléctricas en vivienda, local y negocio</li>
+    <li>Boletín eléctrico CIE y legalizaciones ante Industria</li>
+    <li>Cuadros, reformas e instalaciones nuevas</li>
+    <li>Puntos de recarga para coche eléctrico</li>
+  </ul>
+
+  <div class="datos">
+    <p><strong>VILLVERG SOLUCIONES INTEGRALES SL</strong> · CIF B19430115</p>
+    <p>Instalador autorizado de baja tensión <strong>nº 25094</strong> (Gobierno de Canarias)</p>
+    <p>C. Ángel Arocha 24, 38594 Granadilla de Abona, Santa Cruz de Tenerife</p>
+    <p><a href="mailto:info@okservice.es">info@okservice.es</a> · <a href="tel:+34679325222">679 32 52 22</a></p>
+  </div>
+</main>
+
+<footer class="wrap">
+  <p>Zona: Granadilla, San Miguel, Arona, Adeje, Los Cristianos, Las Américas, El Médano y alrededores.</p>
+</footer>
+
+</body>
+</html>
